@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuevo</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <?php include __DIR__ . '\..\layout\menu.php' ?>
+    <?php $currentPage = 'alumnos'; include __DIR__ . '\..\layout\menu.php' ?>
 
     <h1>Nuevo Alumno</h1>
 
     <form action="#" method="POST">
         <label>Nombre</label>
-        <input type="text" required name="nombre"  />
+        <input class="form-control" type="text" required name="nombre"  />
 
         <label>Apellido</label>
-        <input type="text" required name="apellido" />
+        <input class="form-control" type="text" required name="apellido" />
 
         <label>Correo Electronico</label>
-        <input type="email" required name="email" />
+        <input class="form-control" type="email" required name="email" />
 
         <label>Fecha de nacimiento</label>
-        <input type="date" required name="fecha_nacimiento" />
+        <input class="form-control" type="date" required name="fecha_nacimiento" />
 
         <br>
         <br>
-        <input type="submit" value="Guardar" name="guardar">
+        <input class="btn btn-success" type="submit" value="Guardar" name="guardar">
     </form>
 </body>
 </html>

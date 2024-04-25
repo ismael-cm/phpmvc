@@ -1,9 +1,9 @@
 <nav class="menu">
     <ul>
-        <li>
-            <a href="HomeController.php">Home</a>
+        <li class="<?php echo $currentPage == 'home' ? 'is-active' : '' ?>">
+            <a  href="HomeController.php">Home</a>
         </li>
-        <li>
+        <li class="<?php echo $currentPage == 'alumnos' ? 'is-active' : '' ?>">
             <a href="AlumnoController.php">Alumnos</a>
         </li>
     </ul>
